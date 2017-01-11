@@ -18,14 +18,13 @@ x = [10,3,5,1,0,8,-1,30,-5,2]
 selectionSort(x)
 
 
-# def selectionSort(arr):
-#    for i in range(len(arr)-1,0,-1):
-#        idx=0
-#        for j in range(1,i+1):
-#            if arr[j]>arr[idx]:
-#                idx = j
-#        arr[i], arr[idx]= arr[idx], arr[i]
-#        print arr
-# x = [10,3,5,1,0,8,-1,30,-5,2]
-# selectionSort(x)
-# print(x)
+def selectionSortTwo(arr):
+   for i in range(len(arr)-1,0,-1):
+       idx=0
+       for j in range(1,i+1):
+           if arr[j]>arr[idx]:
+               idx = j
+       arr[i], arr[idx]= arr[idx], arr[i]
+x = [10,3,5,1,0,8,-1,30,-5,2]
+selectionSortTwo(x)
+print(x)
